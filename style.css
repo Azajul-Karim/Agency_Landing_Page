@@ -89,6 +89,9 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   .hamburger {
     display: block;
     font-size: 30px;
@@ -196,6 +199,10 @@ body {
   .sponser img {
     width: 100%;
   }
+  .hero_section .hero_image img {
+    width: 100%;
+    height: auto;
+  }
 }
 .service {
   margin-top: 50px;
@@ -228,6 +235,10 @@ body {
   height: 70px;
 }
 
+.second_features .features_img img {
+  width: auto;
+  height: 548px;
+}
 @media (max-width: 768px) {
   .service .features {
     flex-direction: column;
@@ -243,6 +254,10 @@ body {
   .service img {
     width: 50px;
     height: 50px;
+  }
+  .second_features .features_img img {
+    width: 100%;
+    height: auto;
   }
 }
 .second_features {
@@ -567,16 +582,16 @@ textarea {
     padding: 20px;
   }
   .services_img {
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     padding: 20px;
   }
   .services_img img {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
   .services .action {
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     padding: 20px;
   }
